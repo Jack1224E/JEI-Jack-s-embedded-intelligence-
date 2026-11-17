@@ -1,0 +1,93 @@
+# =====================================================================
+# Project J-EI .gitignore
+# =====================================================================
+
+# 1. Secrets & Environment Files (CRITICAL - Never commit API keys)
+.env
+.env.*
+!.env.example
+
+# 2. Markdown Documents (Strict: No markdowns in repo except README.md)
+*.md
+!README.md
+docs/
+archive/
+plan.md
+README_COLAB.md
+
+# 3. Archives & Compressed Packages (Colab zips, migrations)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.7z
+project_j_ei_colab_package.*
+jei_clean_migration.zip
+
+# 4. Large Datasets, Reference Books & AST Artifacts
+books/
+data/
+
+# 5. Virtual Environments & Python Runtime
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 6. Build, Distribution & Packaging Artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 7. Testing & Quality Assurance Caches
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# 8. Notebooks, Exports & HTML Dumps
+notebooks/
+*.ipynb
+.ipynb_checkpoints/
+codex.html
+
+# 9. Logs & Temp Docks
+*.log
+/tmp/
+/tmp/j_ei_codex_dock/
+
+# 10. OS & Editor Artifacts
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

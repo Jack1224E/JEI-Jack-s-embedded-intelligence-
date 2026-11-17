@@ -1,0 +1,16 @@
+# Project J-EI (Jack's Embedded Intelligence) - Dependencies for Local & Colab Execution
+pydantic>=2.7.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+openai>=1.30.0
+numpy>=1.26.0
+rapidfuzz>=3.8.0
+scikit-learn>=1.4.0
+scipy>=1.12.0
+pytest>=8.0.0
+pymupdf>=1.24.0
+pymupdf4llm>=0.0.1
+ebooklib>=0.18
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+

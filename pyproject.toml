@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "j-ei"
+version = "2.0.0"
+description = "Project J-EI: GPT-6-Astra-powered Dual-Buffer Cognitive Reasoning & Investigative Intelligence Engine"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "pydantic-settings>=2.0",
+    "python-dotenv>=1.0",
+    "sentence-transformers>=3.0",
+    "openai>=1.0",
+    "numpy>=1.26",
+    "rapidfuzz>=3.0",
+    "pymupdf>=1.24",
+    "pymupdf4llm>=0.0.17",
+    "ebooklib>=0.18",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
