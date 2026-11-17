@@ -80,6 +80,10 @@ Even the most advanced Large Language Models often stumble when debugging comple
 
 ## 🔬 Technical Deep Dive
 
+> [!IMPORTANT]
+> **Engine Runtime Scope & Model Prerequisites:**  
+> In its current release, Project J-EI is hardcoded to orchestrate single-shot reasoning through the **OpenAI Codex CLI (`codex exec`)** powered by **ChatGPT / OpenAI-compatible reasoning models via AgentRouter API keys** (defaulting to `gpt-5.6-sol`). It operates via isolated, read-only sandboxed task workspaces rather than generic multi-turn chat loops. To run this project, an active Codex CLI installation and an AgentRouter or ChatGPT-compatible gateway key are strictly required.
+
 ### 1. Zero-Cost, 100% Local Playbook Retrieval
 - **Vector Model:** `BAAI/bge-small-en-v1.5` via `sentence-transformers`.
 - **Dimensions:** 384-dimensional normalized dense vectors.
